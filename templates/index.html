@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST">
+    <div class="form-group">
+        <label for="task">What would you like the agent to do?</label>
+        <input type="text" id="task" name="task" placeholder="Enter your task here...">
+    </div>
+    <button type="submit">Execute Task</button>
+</form>
+{% endblock %} 
