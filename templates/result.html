@@ -4,7 +4,7 @@
 <form method="POST">
     <div class="form-group">
         <label for="task">What would you like the agent to do?</label>
-        <input type="text" id="task" name="task" value="{{ task }}" placeholder="Enter your task here...">
+        <textarea id="task" name="task" rows="4" placeholder="Enter your task here...">{{ task }}</textarea>
     </div>
     <button type="submit">Execute Task</button>
 </form>
