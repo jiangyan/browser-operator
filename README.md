@@ -53,6 +53,7 @@ cp .env.example .env
 
 5. Update the `.env` file with your configuration:
 ```
+OPENAI_API_KEY=your_api_key_here
 ANTHROPIC_API_KEY=your_api_key_here
 CHROME_INSTANCE_PATH=/path/to/your/chrome  # Adjust based on your OS
 ```
