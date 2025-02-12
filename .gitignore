@@ -42,5 +42,6 @@ instance/
 # Project specific
 agent_history.gif
 .env
+.env.local
 *.log
 chrome_debug.log

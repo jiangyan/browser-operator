@@ -40,7 +40,7 @@ source .venv/bin/activate
 3. Install dependencies:
 ```bash
 # Install browser-use and its dependencies
-uv pip install browser-use flask python-dotenv langchain-anthropic
+uv pip install browser-use flask python-dotenv langchain-anthropic langchain-openai
 
 # Install Playwright browsers
 playwright install

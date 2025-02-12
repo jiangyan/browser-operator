@@ -7,14 +7,15 @@ import asyncio
 import os
 
 load_dotenv()
-llm = ChatAnthropic(model="claude-3-5-sonnet-20241022")
+# llm = ChatAnthropic(model="claude-3-5-sonnet-20241022")
+llm = ChatOpenAI(model="gpt-4o")
 
 app = Flask(__name__)
 
 def create_browser():
     """Create a new browser instance"""
     config = BrowserConfig(
-        chrome_instance_path=os.getenv('CHROME_INSTANCE_PATH', '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')
+        chrome_instance_path=os.getenv('CHROME_INSTANCE_PATH', 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe')
     )
     return Browser(config=config)
 
